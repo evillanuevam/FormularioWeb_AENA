@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilizamos flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* La página ocupa toda la altura de la ventana */
+}
+
+.form-container {
+    max-width: 600px; /* Ajusta el ancho deseado */
+    width: 100%; /* Para que siempre ocupe todo el espacio posible */
+    margin: 20px; /* Asegura un pequeño espacio alrededor */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #003366;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén apilados verticalmente */
+    align-items: stretch; /* Alinea todos los elementos al mismo ancho */
+    margin-bottom: 15px; /* Espaciado entre grupos */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilo general para inputs y select */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+button {
+    padding: 8px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente uniforme */
+    width: 100%; /* Todos los elementos ocupan el mismo ancho */
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+/* Estilo adicional para inputs y select */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    border: 1px solid #ccc; /* Borde uniforme */
+}
+
+/* Estilo específico para botones */
+button {
+    background-color: #003366; /* Color de fondo */
+    color: white; /* Texto blanco */
+    padding: 10px; /* Ajusta el espacio interno */
+    border: none; /* Elimina borde predeterminado */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+    font-size: 16px; /* Tamaño de fuente más grande */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #005599; /* Color más claro al pasar el cursor */
+}
